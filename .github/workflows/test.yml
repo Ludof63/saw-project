@@ -1,0 +1,34 @@
+name: Tests
+
+on:
+    workflow_dispatch:
+    push:
+        branches: ["main"]
+    pull_request:
+        branches: ["main"]
+
+jobs:
+    test:
+        permissions:
+            contents: read
+
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+              name: Checkout
+            - uses: shivammathur/setup-php@v2
+              name: Setup PHP
+              with:
+                  php-version: "7.4"
+            - uses: pnpm/action-setup@v2
+              name: Setup pnpm
+              with:
+                  version: "7.14.2"
+            - run: pnpm install
+              name: Install pnpm dependencies
+            - run: pnpm build
+              name: Build
+            - run: docker-compose up -d
+              name: Starts docker
+            - run: pnpm test
+              name: Run tests

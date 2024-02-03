@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "lab"
+version = "0.1.0"
+description = ""
+authors = ["rikyiso01 <riky.isola@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.execute.dependencies]
+httpx = "^0.23.0"
+paramiko = "^2.12.0"
+
+
+[tool.poetry.group.upload.dependencies]
+paramiko = "^2.12.0"
+
+
+[tool.poetry.group.consts.dependencies]
+toml = "^0.10.2"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,125 @@
+@import "tokens.css";
+@import "font-awesome.min.css";
+@import "beer.min.css";
+
+.password_strong {
+    border-color: green !important;
+}
+
+.password_good {
+    border-color: yellow !important;
+}
+
+.password_weak {
+    border-color: orange !important;
+}
+
+.password_invalid {
+    border-color: red !important;
+}
+
+.invisible {
+    display: none;
+}
+
+.overflow {
+    overflow: visible !important;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+:root,
+body.light {
+    /* light */
+    --primary: var(--md-sys-color-primary-light);
+    --on-primary: var(--md-sys-color-on-primary-light);
+    --primary-container: var(--md-sys-color-primary-container-light);
+    --on-primary-container: var(--md-sys-color-on-primary-container-light);
+    --color-secondary: var(--md-sys-color-secondary-light);
+    --on-secondary: var(--md-sys-color-on-secondary-light);
+    --secondary-container: var(--md-sys-color-secondary-container-light);
+    --on-secondary-container: var(--md-sys-color-on-secondary-container-light);
+    --tertiary: var(--md-sys-color-tertiary-light);
+    --on-tertiary: var(--md-sys-color-on-tertiary-light);
+    --tertiary-container: var(--md-sys-color-tertiary-container-light);
+    --on-tertiary-container: var(--md-sys-color-on-tertiary-container-light);
+    --error: var(--md-sys-color-error-light);
+    --error-container: var(--md-sys-color-error-container-light);
+    --on-error: var(--md-sys-color-on-error-light);
+    --on-error-container: var(--md-sys-color-on-error-container-light);
+    --background: var(--md-sys-color-background-light);
+    --on-background: var(--md-sys-color-on-background-light);
+    --surface: var(--md-sys-color-surface-light);
+    --on-surface: var(--md-sys-color-on-surface-light);
+    --color-surface-variant: var(--md-sys-color-surface-variant-light);
+    --on-surface-variant: var(--md-sys-color-on-surface-variant-light);
+    --outline: var(--md-sys-color-outline-light);
+    --inverse-on-surface: var(--md-sys-color-inverse-on-surface-light);
+    --inverse-surface: var(--md-sys-color-inverse-surface-light);
+
+    --active: rgba(0, 0, 0, 0.1);
+    --overlay: rgba(0, 0, 0, 0.5);
+    --elevate1: 0 2rem 2rem 0 rgba(0, 0, 0, 0.14),
+        0 1rem 5rem 0 rgba(0, 0, 0, 0.12), 0 3rem 1rem -2rem rgba(0, 0, 0, 0.2);
+    --elevate2: 0 6rem 10rem 0 rgba(0, 0, 0, 0.14),
+        0 1rem 18rem 0 rgba(0, 0, 0, 0.12), 0 3rem 5rem -1rem rgba(0, 0, 0, 0.3);
+    --elevate3: 0 10rem 16rem 0 rgba(0, 0, 0, 0.14),
+        0 1rem 31rem 0 rgba(0, 0, 0, 0.12), 0 3rem 9rem 0rem rgba(0, 0, 0, 0.4);
+    --size: 1px;
+    --font: "Roboto", BlinkMacSystemFont, -apple-system, "Segoe UI", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    --speed1: 0.1s;
+    --speed2: 0.2s;
+    --speed3: 0.3s;
+    --speed4: 0.4s;
+}
+
+body.dark {
+    /* dark */
+    --primary: var(--md-sys-color-primary-dark);
+    --on-primary: var(--md-sys-color-on-primary-dark);
+    --primary-container: var(--md-sys-color-primary-container-dark);
+    --on-primary-container: var(--md-sys-color-on-primary-container-dark);
+    --color-secondary: var(--md-sys-color-secondary-dark);
+    --on-secondary: var(--md-sys-color-on-secondary-dark);
+    --secondary-container: var(--md-sys-color-secondary-container-dark);
+    --on-secondary-container: var(--md-sys-color-on-secondary-container-dark);
+    --tertiary: var(--md-sys-color-tertiary-dark);
+    --on-tertiary: var(--md-sys-color-on-tertiary-dark);
+    --tertiary-container: var(--md-sys-color-tertiary-container-dark);
+    --on-tertiary-container: var(--md-sys-color-on-tertiary-container-dark);
+    --error: var(--md-sys-color-error-dark);
+    --error-container: var(--md-sys-color-error-container-dark);
+    --on-error: var(--md-sys-color-on-error-dark);
+    --on-error-container: var(--md-sys-color-on-error-container-dark);
+    --background: var(--md-sys-color-background-dark);
+    --on-background: var(--md-sys-color-on-background-dark);
+    --surface: var(--md-sys-color-surface-dark);
+    --on-surface: var(--md-sys-color-on-surface-dark);
+    --color-surface-variant: var(--md-sys-color-surface-variant-dark);
+    --on-surface-variant: var(--md-sys-color-on-surface-variant-dark);
+    --outline: var(--md-sys-color-outline-dark);
+    --inverse-on-surface: var(--md-sys-color-inverse-on-surface-dark);
+    --inverse-surface: var(--md-sys-color-inverse-surface-dark);
+
+    --active: rgba(255, 255, 255, 0.2);
+    --overlay: rgba(0, 0, 0, 0.5);
+    --elevate1: 0 2rem 2rem 0 rgba(0, 0, 0, 0.14),
+        0 1rem 5rem 0 rgba(0, 0, 0, 0.12), 0 3rem 1rem -2rem rgba(0, 0, 0, 0.2);
+    --elevate2: 0 6rem 10rem 0 rgba(0, 0, 0, 0.14),
+        0 1rem 18rem 0 rgba(0, 0, 0, 0.12), 0 3rem 5rem -1rem rgba(0, 0, 0, 0.3);
+    --elevate3: 0 10rem 16rem 0 rgba(0, 0, 0, 0.14),
+        0 1rem 31rem 0 rgba(0, 0, 0, 0.12), 0 3rem 9rem 0rem rgba(0, 0, 0, 0.4);
+    --size: 1px;
+    --font: "Roboto", BlinkMacSystemFont, -apple-system, "Segoe UI", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    --speed1: 0.1s;
+    --speed2: 0.2s;
+    --speed3: 0.3s;
+    --speed4: 0.4s;
+}

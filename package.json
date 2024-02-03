@@ -1,0 +1,31 @@
+{
+    "name": "lab",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "php tests/test_all.php http://localhost:8080",
+        "test_remote": "php tests/test_all.php https://saw21.dibris.unige.it/~S4943369",
+        "dev": "bash scripts/dev.sh",
+        "build": "bash scripts/build.sh",
+        "upload": "poetry run python3 scripts/upload.py",
+        "logs": "poetry run python3 scripts/execute.py scripts/php/logs.php",
+        "execute": "poetry run python3 scripts/execute.py",
+        "sql": "poetry run python3 scripts/sql.py",
+        "clear": "poetry run python3 scripts/sql.py -t file scripts/sql/clear.sql",
+        "psalm": "vendor/bin/psalm --debug",
+        "taint": "vendor/bin/psalm --debug --taint-analysis",
+        "cypress": "cypress open",
+        "consts": "poetry run python3 scripts/consts.py"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "typescript": "^4.9.4"
+    },
+    "dependencies": {
+        "beercss": "^2.3.0",
+        "font-awesome": "^4.7.0"
+    }
+}

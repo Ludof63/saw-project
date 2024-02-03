@@ -1,0 +1,8 @@
+{
+    "db_password": "test",
+    "jwt_secret": "test",
+    "admin_email": "riky.isola@gmail.com",
+    "admin_password": "testing",
+    "admin_firstname": "Riccardo",
+    "admin_lastname": "Isola"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "riky/lab",
+    "require-dev": {
+        "vimeo/psalm": "^4.30"
+    },
+    "autoload": {
+        "psr-4": {
+            "Riky\\Lab\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rikyiso01",
+            "email": "riky.isola@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.6"
+    }
+}
